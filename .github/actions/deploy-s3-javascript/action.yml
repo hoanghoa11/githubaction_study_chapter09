@@ -1,0 +1,12 @@
+name: 'Deploy to S3 JavaScript'
+description: 'Deploy built website to S3 bucket'
+runs:
+  using: 'node16'
+  main: 'index.js'
+inputs:
+  bucket:
+    description: 'S3 bucket name'
+    required: true
+  region:
+    description: 'AWS region'
+    required: true
