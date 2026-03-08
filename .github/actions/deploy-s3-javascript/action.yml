@@ -10,3 +10,8 @@ inputs:
   region:
     description: 'AWS region'
     required: true
+    default: 'us-east-1'
+  dist-folder:
+    description: 'Folder with built website'
+    required: true
+    default: 'dist'
