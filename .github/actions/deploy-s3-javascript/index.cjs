@@ -2,7 +2,7 @@ const core = require('@actions/core');
 const { exec } = require('@actions/exec');
 function run() {
   // Get inputs
-  const bucket = core.getInput('bucket-name', { required: true });
+  const bucket = core.getInput('bucket', { required: true });
   const region = core.getInput('region', { required: true });
   const distFolder = core.getInput('dist-folder', { required: true });
   
